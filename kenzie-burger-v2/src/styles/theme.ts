@@ -9,6 +9,7 @@ export const mainTheme = {
         gray300: "#828282",
         gray100: "#E0E0E0",
         gray0: "#F5F5F5",
+        white: "#FFFFFF",
         feedback: {
             negative: "#E60000",
             warning: "#FFCD07",

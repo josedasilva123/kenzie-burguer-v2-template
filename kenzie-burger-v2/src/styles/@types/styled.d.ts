@@ -12,6 +12,7 @@ declare module "styled-components" {
          gray300: string;
          gray100: string;
          gray0: string;
+         white: string;
          feedback: {
             negative: string;
             warning: string;
