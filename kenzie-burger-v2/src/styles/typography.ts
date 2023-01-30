@@ -15,18 +15,18 @@ export const StyledTitle = styled(BaseTitle)<iStyledTitleProps>`
             case 'one':
                 return css`
                     font-size: 1.55rem;
-                    font-weight: 600;
+                    font-weight: 700;
                 `
             case 'two':
                 return css`
                     font-size: 1.35rem;
-                    font-weight: 600;
+                    font-weight: 700;
                 `    
             
             case 'three':
                 return css`
                     font-size: 1.15rem;
-                    font-weight: 600;
+                    font-weight: 700;
                 `
 
             case 'four':

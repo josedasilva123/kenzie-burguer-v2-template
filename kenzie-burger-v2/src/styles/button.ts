@@ -7,6 +7,7 @@ interface iStyledButtonProps {
 }
 
 export const StyledButtonCSS = css<iStyledButtonProps>`
+   cursor: pointer;
    display: inline-flex;
    align-items: center;
    justify-content: center;
