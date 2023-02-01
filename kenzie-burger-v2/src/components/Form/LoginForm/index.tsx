@@ -1,14 +1,13 @@
-import { TextField } from '@mui/material'
-import React from 'react'
 import { StyledButton } from '../../../styles/button'
-import { StyledForm } from '../../../styles/form'
+import { StyledForm, StyledTextField } from '../../../styles/form'
+import Input from '../Input'
 
 const LoginForm = () => {
   return (
     <StyledForm>
-        <TextField label="Nome" />
-        <TextField label="Senha" type="password" />
-        <StyledButton $buttonSize='default' $buttonStyle='green'>Logar</StyledButton>
+        <Input label="E-mail" type="email" />
+        <Input label="Senha" type="password"  />
+        <StyledButton $buttonSize='default' $buttonStyle='green'>Cadastrar</StyledButton>
     </StyledForm>    
   )
 }

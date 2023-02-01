@@ -1,22 +1,35 @@
-import React from "react";
 import LoginForm from "../../components/Form/LoginForm";
+import IllustrationBox from "../../components/IllustrationBox";
 import { StyledButtonLink } from "../../styles/button";
-import { StyledContainer } from "../../styles/grid";
-import { StyledTitle } from "../../styles/typography";
+import { StyledContainer, StyledGridBox } from "../../styles/grid";
+import { StyledParagraph, StyledTitle } from "../../styles/typography";
+import { StyledLoginPage } from "./style";
 
 const LoginPage = () => {
    return (
-      <div>
+      <StyledLoginPage>
          <StyledContainer>
             <div className="flexGrid">
-               <div className="formBox">
-                  <StyledTitle tag="h2" $fontSize="three">Login</StyledTitle>
-                  <LoginForm />
-                  <StyledButtonLink $buttonSize="default" $buttonStyle="gray">Cadastrar</StyledButtonLink>
+               <div className="left">
+                  <StyledGridBox className="formBox">
+                     <StyledTitle tag="h2" $fontSize="three">
+                        Login
+                     </StyledTitle>
+                     <LoginForm />
+                     <StyledParagraph textAlign="center" fontColor="gray">
+                        Crie sua conta para saborear muitas delícias e matar sua fome!
+                     </StyledParagraph>
+                     <StyledButtonLink to="/register" $buttonSize="default" $buttonStyle="gray">
+                        Cadastrar
+                     </StyledButtonLink>
+                  </StyledGridBox>
+               </div>
+               <div className="right">
+                  <IllustrationBox />
                </div>
             </div>
          </StyledContainer>
-      </div>
+      </StyledLoginPage>
    );
 };
 
