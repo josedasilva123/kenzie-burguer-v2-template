@@ -13,5 +13,10 @@ export const GlobalStyles = createGlobalStyle`
     button{
         cursor: pointer;
     }
+
+    dialog{
+        display: unset;
+        position: unset;
+    }
 `
 
