@@ -4,7 +4,11 @@ import SearchForm from "./SearchForm";
 import { MdShoppingCart, MdLogout } from "react-icons/md";
 import { StyledHeader } from "./style";
 
-const Header = () => {
+interface iHeaderProps{
+   setModalIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const Header = ({setModalIsOpen}: iHeaderProps) => {
    return (
       <StyledHeader>
          <StyledContainer containerWidth={1300}>
@@ -13,7 +17,7 @@ const Header = () => {
                <nav className="nav" role="navigation">
                   <SearchForm />
                   <div className="buttons">
-                     <button>
+                     <button onClick={() => setModalIsOpen(true)}>
                         <MdShoppingCart size={28} />
                      </button>
                      <button>
