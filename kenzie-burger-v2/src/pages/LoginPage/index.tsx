@@ -1,4 +1,5 @@
 import LoginForm from "../../components/Form/LoginForm";
+import SearchForm from "../../components/Header/SearchForm";
 import IllustrationBox from "../../components/IllustrationBox";
 import { StyledButtonLink } from "../../styles/button";
 import { StyledContainer, StyledGridBox } from "../../styles/grid";
