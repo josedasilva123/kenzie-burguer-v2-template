@@ -10,6 +10,7 @@ declare module "styled-components" {
          secondary: string;
          gray600: string;
          gray300: string;
+         gray150: string;
          gray100: string;
          gray0: string;
          white: string;
