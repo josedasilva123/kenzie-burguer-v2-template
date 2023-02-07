@@ -4,6 +4,7 @@ import BaseTitle from "./components/BaseTitle";
 
 interface iStyledTitleProps {
    $fontSize: "one" | "two" | "three" | "four";
+   textAlign?: "center" | "left" | "right";
 }
 
 interface iStyledParagraphProps {
@@ -16,6 +17,8 @@ export const StyledTitle = styled(BaseTitle)<iStyledTitleProps>`
 
    font-family: ${({ theme }) => theme.fonts.primary};
    line-height: 1.6;
+
+   text-align: ${({ textAlign }) => textAlign};
 
    ${({ $fontSize }) => {
       switch ($fontSize) {
