@@ -7,7 +7,7 @@ const LoginForm = () => {
     <StyledForm>
         <Input label="E-mail" type="email" />
         <Input label="Senha" type="password"  />
-        <StyledButton $buttonSize='default' $buttonStyle='green'>Cadastrar</StyledButton>
+        <StyledButton $buttonSize='default' $buttonStyle='green'>Entrar</StyledButton>
     </StyledForm>    
   )
 }
