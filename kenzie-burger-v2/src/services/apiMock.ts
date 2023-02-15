@@ -1,4 +1,4 @@
-export interface iProductMock{
+export interface IProductMock{
     id: number,
     name: string;
     category: string;

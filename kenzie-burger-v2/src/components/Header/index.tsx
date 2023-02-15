@@ -4,11 +4,11 @@ import SearchForm from "./SearchForm";
 import { MdShoppingCart, MdLogout } from "react-icons/md";
 import { StyledHeader } from "./style";
 
-interface iHeaderProps{
+interface IHeaderProps{
    setModalIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const Header = ({setModalIsOpen}: iHeaderProps) => {
+const Header = ({setModalIsOpen}: IHeaderProps) => {
    return (
       <StyledHeader>
          <StyledContainer containerWidth={1300}>

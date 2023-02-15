@@ -2,17 +2,17 @@ import React from "react";
 import styled, { css, isStyledComponent } from "styled-components";
 import BaseTitle from "./components/BaseTitle";
 
-interface iStyledTitleProps {
+interface IStyledTitleProps {
    $fontSize: "one" | "two" | "three" | "four";
    textAlign?: "center" | "left" | "right";
 }
 
-interface iStyledParagraphProps {
+interface IStyledParagraphProps {
    fontColor?: "gray" | "red";
    textAlign?: "center" | "left" | "right";
 }
 
-export const StyledTitle = styled(BaseTitle)<iStyledTitleProps>`
+export const StyledTitle = styled(BaseTitle)<IStyledTitleProps>`
    width: 100%;
 
    font-family: ${({ theme }) => theme.fonts.primary};
@@ -48,7 +48,7 @@ export const StyledTitle = styled(BaseTitle)<iStyledTitleProps>`
    }}
 `;
 
-export const StyledParagraph = styled.p<iStyledParagraphProps>`
+export const StyledParagraph = styled.p<IStyledParagraphProps>`
    font-family: ${({ theme }) => theme.fonts.primary};
    font-size: 0.875rem;
    font-weight: 400;

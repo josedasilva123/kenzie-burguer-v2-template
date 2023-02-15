@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-interface iStyledContainerProps{
+interface IStyledContainerProps{
     containerWidth?: number;
 }
 
-export const StyledContainer = styled.div<iStyledContainerProps>`
+export const StyledContainer = styled.div<IStyledContainerProps>`
     width: 100%;
     max-width: ${({containerWidth}) => containerWidth ? containerWidth : 1000}px;
     margin: 0 auto;

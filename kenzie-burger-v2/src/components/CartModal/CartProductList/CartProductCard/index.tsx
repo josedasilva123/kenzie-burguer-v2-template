@@ -1,13 +1,13 @@
-import { iProductMock } from "../../../../services/apiMock";
+import { IProductMock } from "../../../../services/apiMock";
 import { StyledTitle } from "../../../../styles/typography";
 import { MdDelete } from "react-icons/md";
 import { StyledCartProductCard } from "./style";
 
-interface iCartProductCard {
-   product: iProductMock;
+interface ICartProductCard {
+   product: IProductMock;
 }
 
-const CartProductCard = ({ product }: iCartProductCard) => {
+const CartProductCard = ({ product }: ICartProductCard) => {
    return (
       <StyledCartProductCard>
          <div className="imageBox">

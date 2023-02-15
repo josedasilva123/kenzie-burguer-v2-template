@@ -2,13 +2,13 @@ import React from 'react'
 import { StyledTextField } from '../../../styles/form'
 import { StyledParagraph } from '../../../styles/typography';
 
-interface iInputProps{
+interface IInputProps{
     label: string;
     type?: string;
     error?: string;
 }
 
-const Input = ({label, type, error}: iInputProps) => {
+const Input = ({label, type, error}: IInputProps) => {
   return (
     <fieldset>
         <StyledTextField label={label} type={type} /> 

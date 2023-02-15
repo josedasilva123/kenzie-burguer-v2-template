@@ -1,13 +1,13 @@
-import { iProductMock } from '../../../services/apiMock'
+import { IProductMock } from '../../../services/apiMock'
 import { StyledButton } from '../../../styles/button';
 import { StyledParagraph, StyledTitle } from '../../../styles/typography';
 import { StyledProductCard } from './style';
 
-interface iProductCardProps{
-    product: iProductMock;
+interface IProductCardProps{
+    product: IProductMock;
 }
 
-const ProductCard = ({product}: iProductCardProps) => {
+const ProductCard = ({product}: IProductCardProps) => {
   return (
     <StyledProductCard>
         <div className="imageBox">

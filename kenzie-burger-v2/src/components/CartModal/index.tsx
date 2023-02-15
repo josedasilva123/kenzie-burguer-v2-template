@@ -4,11 +4,11 @@ import { MdClose } from "react-icons/md";
 import { StyledCartModalBox } from "./style";
 import CartProductList from "./CartProductList";
 
-interface iCartModalProps{
+interface ICartModalProps{
     setModalIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const CartModal = ({setModalIsOpen}: iCartModalProps) => {
+const CartModal = ({setModalIsOpen}: ICartModalProps) => {
    return (
       <StyledCartModalBox>
          <dialog>

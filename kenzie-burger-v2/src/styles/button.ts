@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 
-interface iStyledButtonProps {
+interface IStyledButtonProps {
    $buttonSize: "default" | "medium";
    $buttonStyle: "green" | "gray";
 }
 
-export const StyledButtonCSS = css<iStyledButtonProps>`
+export const StyledButtonCSS = css<IStyledButtonProps>`
    cursor: pointer;
    display: inline-flex;
    align-items: center;
@@ -58,7 +58,7 @@ export const StyledButtonCSS = css<iStyledButtonProps>`
    }}
 `;
 
-export const StyledButton = styled.button<iStyledButtonProps>`
+export const StyledButton = styled.button<IStyledButtonProps>`
     ${StyledButtonCSS}
 `;
 
